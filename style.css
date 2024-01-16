@@ -27,7 +27,7 @@ main {
     background-color: var(--grayish);
     width: 1000px;
     padding: 2rem;
-    border-radius: 50px;
+    border-radius: 40px;
     
 }
 
@@ -69,7 +69,7 @@ button {
     justify-content: end;
     align-items: center;
     border: 1px solid var(--black);
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 #rock {
@@ -124,7 +124,7 @@ button {
     width: 100%;
     padding: 2.5rem 0;
     border: 1px solid var(--black);
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
   .user-choice {
@@ -134,7 +134,7 @@ button {
     width: 100%;
     padding: 2.5rem 0;
     border: 1px solid var(--black);
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
     .result-container {
@@ -144,7 +144,7 @@ button {
     width: 100%;
     padding: 2.5rem 0;
     border: 1px solid var(--black);
-    border-radius: 50px;
+    border-radius: 30px;
   }
 
   h1 {
