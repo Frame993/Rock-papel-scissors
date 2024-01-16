@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Rock Paper Scissors Tutorial</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
 
-    <h2>Computer Choice: <span id="computer-choice"></span></h2>
-    <h2>Your Choice: <span id="user-choice"></span></h2>
-    <h2>Result: <span id="result"></span></h2>
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors Tutorial</title>
 
-    <button id="rock">rock</button>
-    <button id="paper">paper</button>
-    <button id="scissors">scissors</button>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <script src="app.js" charset="utf-8"></script>
-  </body>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <main>
+
+    <section class="title-container">
+      <div class="logo">
+        <h1>Rock paper scissors</h1>
+        <img class="arrow" src="./assets/arrow.png" alt="">
+      </div>
+      <h3>A hand game<br>originating in China</h3>
+    </section>
+
+    <section class="computer-choice">
+      <h2>Computer Choice<br><span id="computer-choice"></span></h2>
+    </section>
+
+    <section class="user-choice">
+      <h2>Your Choice<br><span id="user-choice"></span></h2>
+    </section>
+
+    <section class="buttons-container">
+      <button id="rock">Rock (Beat Scissors)</button>
+      <button id="paper">Paper (Beat Rock)</button>
+      <button id="scissors">Scissors (Beat Paper)</button>
+    </section>
+
+    <section class="result-container">
+      <h2>result <br> <span id="result"></span></h2>
+    </section>
+
+  </main>
+
+  <script src="app.js" charset="utf-8"></script>
+</body>
+
 </html>
