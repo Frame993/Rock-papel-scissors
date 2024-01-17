@@ -6,6 +6,7 @@ let userChoice
 let computerChoice
 let result
 
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   userChoice = e.target.id
   userChoiceDisplay.innerHTML = userChoice
@@ -30,25 +31,41 @@ function generateComputerChoice() {
 
 function getResult() {
   if (computerChoice === userChoice) {
-    result = 'its a draw!'
+    result = 'ITS A DRAW!'
   }
   if (computerChoice === 'rock' && userChoice === "paper") {
-    result = 'you win!'
+    result = 'YOU WIN!'
   }
   if (computerChoice === 'rock' && userChoice === "scissors") {
-    result = 'you lost!'
+    result = 'YOU LOST!'
   }
   if (computerChoice === 'paper' && userChoice === "scissors") {
-    result = 'you win!'
+    result = 'YOU WIN!'
   }
   if (computerChoice === 'paper' && userChoice === "rock") {
-    result = 'you lose!'
+    result = 'YOU LOST!'
   }
   if (computerChoice === 'scissors' && userChoice === "rock") {
-    result = 'you win!'
+    result = 'YOU WIN!'
   }
   if (computerChoice === 'scissors' && userChoice === "paper") {
-    result = 'you lose!'
-  }
+    result = 'YOU LOST!'
+  } 
   resultDisplay.innerHTML = result
+  changeColorBackground(result)
 }
+
+function changeColorBackground(result) {
+  let resultContainer = document.querySelector('.result-container');
+
+  if (result === 'YOU WIN!') {
+    resultContainer.style.backgroundColor = '#ACFFA5';
+  }
+  if (result === 'YOU LOST!') {
+    resultContainer.style.backgroundColor = '#FFA5A5';
+  }
+  if (result === 'ITS A DRAW!') {
+    resultContainer.style.backgroundColor = 'white';
+  }
+}
+
